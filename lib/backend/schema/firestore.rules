@@ -1,0 +1,65 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /cupon/{document} {
+      allow create: if request.resource.data.created_by == /databases/$(database)/documents/null/$(request.auth.uid);
+      allow read: if false;
+      allow write: if resource.data.created_by == /databases/$(database)/documents/null/$(request.auth.uid);
+      allow delete: if resource.data.created_by == /databases/$(database)/documents/null/$(request.auth.uid);
+    }
+
+    match /categories_cupon/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /subcategories_cupon/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /cupon/{parent}/products/{document} {
+      allow create: if get(/databases/$(database)/documents/cupon/$(parent)).data.created_by == /databases/$(database)/documents/null/$(request.auth.uid);
+      allow read: if false;
+      allow write: if get(/databases/$(database)/documents/cupon/$(parent)).data.created_by == /databases/$(database)/documents/null/$(request.auth.uid);
+      allow delete: if get(/databases/$(database)/documents/cupon/$(parent)).data.created_by == /databases/$(database)/documents/null/$(request.auth.uid);
+    }
+
+    match /{path=**}/products/{document} {
+      allow read: if false;
+    }
+
+
+    match /favorites_cupons/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /store/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /sales_cupon/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+  }
+}

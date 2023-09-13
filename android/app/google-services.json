@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "130929608450",
+    "project_id": "tobi-eaabf",
+    "storage_bucket": "tobi-eaabf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:130929608450:android:0386efdea85dda8406241b",
+        "android_client_info": {
+          "package_name": "tobi.beta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "130929608450-nfcf5b2ve5sh48a60fdk5s1t3pjm9c2g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tobi.beta",
+            "certificate_hash": "3553e97f4ca3905fa7d1a21e9d8817cdca86cad8"
+          }
+        },
+        {
+          "client_id": "130929608450-s361ucjtsi4puod6ntm01utbn4j88fh9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tobi.beta",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "130929608450-t78bflp1pqnivbnscdo1j70fc0qcecda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDk8kDgxMhNlgFCU5IqbzxtzP85yE5R2IA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "130929608450-bi7s9nk6h80d36r4e37nupnvff0kntut.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "130929608450-80lm2bfe722i9gtrftggcqio2ofnulij.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "tobi.beta"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

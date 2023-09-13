@@ -1,0 +1,30 @@
+export '../../../flutter_flow/lat_lng.dart';
+export 'package:supabase_flutter/supabase_flutter.dart' hide Provider;
+
+export '../supabase.dart';
+export 'row.dart';
+export 'table.dart';
+
+export 'tables/category_coupon.dart';
+export 'tables/order.dart';
+export 'tables/order_coupon.dart';
+export 'tables/cart.dart';
+export 'tables/country.dart';
+export 'tables/transaction.dart';
+export 'tables/transaction_history.dart';
+export 'tables/cupons_favorites.dart';
+export 'tables/role.dart';
+export 'tables/product.dart';
+export 'tables/coupon.dart';
+export 'tables/category_product.dart';
+export 'tables/user.dart';
+export 'tables/subcategory_coupon.dart';
+export 'tables/review.dart';
+export 'tables/store.dart';
+export 'tables/payment.dart';
+export 'tables/favorites.dart';
+export 'tables/address.dart';
+export 'tables/shipping.dart';
+export 'tables/notification.dart';
+export 'tables/item.dart';
+export 'tables/item_cupon.dart';
